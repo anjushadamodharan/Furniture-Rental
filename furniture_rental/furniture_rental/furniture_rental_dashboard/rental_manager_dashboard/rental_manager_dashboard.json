@@ -1,0 +1,37 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Active Rental Contracts",
+   "width": "Half"
+  },
+  {
+   "chart": "Items Out on Rent",
+   "width": "Half"
+  },
+  {
+   "chart": "Returns Due Today",
+   "width": "Half"
+  },
+  {
+   "chart": "Damaged Itemss",
+   "width": "Half"
+  },
+  {
+   "chart": "Maintenance Pending",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-11-22 13:26:19.405890",
+ "dashboard_name": "Rental Manager Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-11-22 13:29:18.549206",
+ "modified_by": "Administrator",
+ "module": "Furniture Rental",
+ "name": "Rental Manager Dashboard",
+ "owner": "Administrator"
+}

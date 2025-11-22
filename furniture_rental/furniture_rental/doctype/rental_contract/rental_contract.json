@@ -19,7 +19,8 @@
   "status",
   "contract_value",
   "section_break_nbou",
-  "rental_items"
+  "rental_items",
+  "amended_from"
  ],
  "fields": [
   {
@@ -89,11 +90,22 @@
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "label": "Customer Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rental Contract",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-11-22 10:41:44.109394",
+ "modified": "2025-11-22 12:36:36.227185",
  "modified_by": "Administrator",
  "module": "Furniture Rental",
  "name": "Rental Contract",

@@ -270,5 +270,10 @@ fixtures = [
               "filters": [
                     ["name", "in", (
                         "Rental Contract Item",)],["module", "=", "Furniture Rental"]]
-        }
+        },
+
+        {"dt":"Dashboard",
+         "filters": [
+                    ["name", "in", (
+                        "Rental Manager Dashboard",)],["module", "=", "Furniture Rental"]]}
 ]
