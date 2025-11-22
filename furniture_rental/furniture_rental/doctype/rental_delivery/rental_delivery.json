@@ -1,0 +1,103 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "RD-.###",
+ "creation": "2025-11-22 06:18:15.254734",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_4277",
+  "amended_from",
+  "rental_contract",
+  "delivery_date",
+  "delivered_by",
+  "customer",
+  "customer_address",
+  "status",
+  "delivery_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_4277",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rental Delivery",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "rental_contract",
+   "fieldtype": "Link",
+   "label": "Rental Contract",
+   "options": "Rental Contract"
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "delivered_by",
+   "fieldtype": "Link",
+   "label": "Delivered By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_address",
+   "fieldtype": "Small Text",
+   "label": "Customer Address"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nDelivered"
+  },
+  {
+   "fieldname": "delivery_items",
+   "fieldtype": "Table",
+   "label": "Delivery Items",
+   "options": "Rental Delivery Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-22 08:18:18.857745",
+ "modified_by": "Administrator",
+ "module": "Furniture Rental",
+ "name": "Rental Delivery",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

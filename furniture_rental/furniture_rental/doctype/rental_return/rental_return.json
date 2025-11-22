@@ -1,0 +1,108 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "RR.###",
+ "creation": "2025-11-22 06:31:01.356348",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rental_contract",
+  "return_date",
+  "received_by",
+  "condition_on_return",
+  "penalty_amount",
+  "notes",
+  "status",
+  "amended_from",
+  "section_break_eqyy",
+  "return_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "rental_contract",
+   "fieldtype": "Link",
+   "label": "Rental Contract",
+   "options": "Rental Contract"
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "label": "Return Date"
+  },
+  {
+   "fieldname": "received_by",
+   "fieldtype": "Link",
+   "label": "Received By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "condition_on_return",
+   "fieldtype": "Select",
+   "label": "Condition on Return",
+   "options": "Good\nDamaged\nNeeds Repair"
+  },
+  {
+   "fieldname": "penalty_amount",
+   "fieldtype": "Currency",
+   "label": "Penalty Amount"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nReturned"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rental Return",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_eqyy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "return_items",
+   "fieldtype": "Table",
+   "label": "Return Items",
+   "options": "Rental Return Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-22 08:19:18.449775",
+ "modified_by": "Administrator",
+ "module": "Furniture Rental",
+ "name": "Rental Return",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

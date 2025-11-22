@@ -1,0 +1,112 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "RC-.###",
+ "creation": "2025-11-21 21:46:31.222510",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "contract_id",
+  "contract_start_date",
+  "security_deposit",
+  "delivery_address",
+  "rental_plan",
+  "column_break_wyhk",
+  "customer",
+  "contract_end_date",
+  "status",
+  "contract_value",
+  "section_break_nbou",
+  "rental_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract_id",
+   "fieldtype": "Data",
+   "label": "Contract ID"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "contract_start_date",
+   "fieldtype": "Date",
+   "label": "Contract Start Date"
+  },
+  {
+   "fieldname": "contract_end_date",
+   "fieldtype": "Date",
+   "label": "Contract End Date"
+  },
+  {
+   "fieldname": "rental_plan",
+   "fieldtype": "Select",
+   "label": "Rental Plan",
+   "options": "Daily\nWeekly\nMonthly"
+  },
+  {
+   "fieldname": "security_deposit",
+   "fieldtype": "Currency",
+   "label": "Security Deposit"
+  },
+  {
+   "fieldname": "delivery_address",
+   "fieldtype": "Small Text",
+   "label": "Delivery Address"
+  },
+  {
+   "fieldname": "column_break_wyhk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nActive\nDelivered\nReturned\nCompleted"
+  },
+  {
+   "fieldname": "contract_value",
+   "fieldtype": "Currency",
+   "label": "Contract Value"
+  },
+  {
+   "fieldname": "section_break_nbou",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rental_items",
+   "fieldtype": "Table",
+   "label": "Rental Items",
+   "options": "Rental Contract Items"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-22 08:17:27.742329",
+ "modified_by": "Administrator",
+ "module": "Furniture Rental",
+ "name": "Rental Contract",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
