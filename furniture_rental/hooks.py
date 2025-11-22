@@ -242,3 +242,33 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+
+fixtures = [
+    {"dt":"Custom Field",
+                "filters": [
+                    ["name", "in", (
+                        "Item-custom_is_rental_item",
+                        "Item-custom_rental_rate_daily",
+                        "Item-custom_rental_rate_weekly",
+                        "Item-custom_rental_rate_monthly",
+                        "Item-custom_damage_penalty_rate",
+                        "Serial No-custom_current_location",
+                        "Serial No-custom_current_rental_contract",
+                        "Serial No-custom_condition_status",
+                        "Customer-custom_rental_kyc_document",
+                        "Customer-custom_address_proof",
+                        "Customer-custom_id_proof",
+                        "Delivery Note-custom_rental_contract",
+                        "Delivery Note-custom_actual_return_date",
+                        "Sales Invoice-custom_rental_contract",
+                    )],["module", "=", "Furniture Rental"]
+                ]
+            },
+
+        {"dt":"Client Script",
+              "filters": [
+                    ["name", "in", (
+                        "Rental Contract Item",)],["module", "=", "Furniture Rental"]]
+        }
+]

@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Rental Contract",
+  "enabled": 1,
+  "modified": "2025-11-22 11:13:19.683655",
+  "module": "Furniture Rental",
+  "name": "Rental Contract Item",
+  "script": "frappe.ui.form.on('Rental Contract', {\n\trefresh(frm) {\n\t\t// your code here\n\t}\n})\n\nfrappe.ui.form.on(\"Rental Contract Item\", {\n    qty: function(frm, cdt, cdn) {\n        let row = locals[cdt][cdn];\n        row.amount = (row.qty || 0) * (row.rent_rate || 0);\n        frm.refresh_field(\"rental_items\");\n    },\n    rent_rate: function(frm, cdt, cdn) {\n        let row = locals[cdt][cdn];\n        row.amount = (row.qty || 0) * (row.rent_rate || 0);\n        frm.refresh_field(\"rental_items\");\n    }\n});\n",
+  "view": "Form"
+ }
+]

@@ -1,4 +1,5 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
  "creation": "2025-11-21 22:10:36.637623",
@@ -22,6 +23,7 @@
    "options": "Item"
   },
   {
+   "fetch_from": "item.item_name",
    "fieldname": "item_name",
    "fieldtype": "Data",
    "label": "Item Name"
@@ -57,7 +59,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-11-21 22:15:28.621135",
+ "modified": "2025-11-22 11:09:49.866691",
  "modified_by": "Administrator",
  "module": "Furniture Rental",
  "name": "Rental Contract Items",
